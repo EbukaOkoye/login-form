@@ -1,0 +1,293 @@
+/*
+#0118ca
+#1552fb
+#2ba2f8
+#7ff2d5
+#31ffd9
+#f7f7f9
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    /* gap: 1.5rem; */
+    /* border: 2px solid #000; */
+}
+.design-area,
+.login-submit {
+    flex: 0 0 calc(50% - 0rem);
+}
+
+
+.design-area {
+    min-height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg, #0118ca, #2ba2f8, #31ffd9);
+}
+
+.white-carrier {
+    padding: 1rem;
+}
+
+.white {
+    height: 2.4rem;
+    width: 2.4rem;
+    background: #fff;
+    border-radius: .6rem;
+    margin-left: auto;
+    margin-right: 40%;
+}
+
+.pic-carrier {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pic1 {
+    height: 5.4rem;
+    width: 5.4rem;
+    border: .3px solid #fff;
+    border-radius: 1rem;
+    background: url('./images/pexels-tubarones-photography-3026282.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+}
+
+.pic2 {
+    height: 9.4rem;
+    width: 9.4rem;
+    border: .3px solid #fff;
+    border-radius: 1.4rem;
+    background: url('./images/pexels-pixabay-220453.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    transform: translateX(1.2rem);
+}
+
+.design-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.design-text h1 {
+    font-family: sans-serif;
+    font-size: 2.5rem;
+}
+
+.small-cyan {
+    height: 1.9rem;
+    width: 1.9rem;
+    background: #31ffd9;
+    border-radius: .3rem;
+    border: .3px solid #fff;
+}
+
+.pic3 {
+    height: 6.9rem;
+    width: 6.9rem;
+    background: url('./images/pexels-mentatdgt-1024311.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    border: 2px solid #fff;
+}
+
+.bottom-pics {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+/*  ------------------------------------- Form section ----------------------------------------------*/
+.login-submit {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+}
+
+.o1,
+.o2 {
+    font-size: 1.3rem;
+    background: -webkit-linear-gradient(#0118cadf, #31ffd9d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo {
+    text-align: right;
+    margin: 1rem 1rem 0 0;
+}
+
+.form-holder {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    /* border: 2px solid #000; */
+    margin: auto auto;
+}
+
+#email-label,
+#pass {
+    color: #111;
+    font-size: .8rem;
+}
+
+#username,
+#password {
+    padding: .4rem;
+    border: none;
+    background: #eee;
+    width: max-content;
+}
+
+#username:focus,
+#password:focus {
+    outline: none;
+}
+
+.forgot {
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.password-holder {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid #000; */
+}
+
+.password {
+    margin-top: .6rem;
+}
+
+.check-boxes {
+    margin-top: 1rem;
+}
+
+#checkbox1,
+#checkbox2 {
+    font-size: .7rem;
+}
+
+input[type='submit'] {
+    width: 100%;
+    margin-top: 1rem;
+    padding: .5rem;
+    background: #0118ca;
+    color: #fff;
+    border: none;
+    border-radius: .3rem;
+    transition: all 1s linear;
+}
+
+input[type='submit']:hover {
+    background: #2ba2f8;
+}
+
+.alternate,
+.buttons {
+    margin-top: 2rem;
+}
+
+.alternate p {
+    font-size: 1rem;
+    color: #ccc;
+    text-align: center;
+}
+
+.buttons button {
+    margin: 0 .6rem;
+    padding: .4rem 1.2rem;
+    border: none;
+}
+
+.google {
+    background: rgb(255, 238, 241);
+    border-radius: .3rem;
+    transition: all 1s linear;
+}
+
+.google:hover {
+    background: #f99fae;
+    color: #fff;
+}
+
+.bi-facebook {
+    color: #0118ca ;
+    transition: all 1s linear;
+}
+
+.facebook {
+    background: #e7eaff;
+    border-radius: .3rem;
+    transition: all 1s linear;
+}
+
+.facebook:hover {
+    background: #4c61ff;
+    color: #fff !important;
+}
+
+.facebook:hover .bi-facebook {
+    color: #fff !important;
+}
+
+.sign-up {
+    margin-top: 1.4rem;
+}
+
+.sign-up p {
+    font-size: .9rem;
+    color: #ccc;
+}
+
+.sign-up a {
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+
+/* ---------------------------------------------- Media Query --------------------------------------- */
+
+
+@media screen and (max-width: 692px) {
+    section {
+        flex-direction: column;
+    }
+
+    .pic2 {
+        transform: translateX(-1.2rem);
+        margin-top: 1rem;
+    }
+
+    .design-area {
+        padding: .8rem;
+    }
+
+    .buttons button {
+        margin-top: .4rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .design-holder {
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+    }
+}
